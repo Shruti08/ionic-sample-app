@@ -25,7 +25,7 @@ angular.module('starter', ['ionic'])
     };
     $http.post('https://api.idolondemand.com/1/api/sync/ocrdocument/v1', {
         'url': lnk,
-        'apikey': '6c6a396b-c7ab-42e0-8d35-e414701294c7'
+        'apikey': 'API_KEY'
     }).then(function (resp){
         $scope.text_block = resp.data.text_block[0].text;
     });
